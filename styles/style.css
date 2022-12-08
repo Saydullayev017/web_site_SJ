@@ -1,0 +1,211 @@
+.header {
+    min-height: 90px;
+    margin-bottom: 130px;
+}
+
+/* ===================header_1=========================== */
+.menu-main {
+  list-style: none;
+  padding: 0 30px;
+  margin: 0;
+  font-size: 20px;
+  text-align: center;
+  position: relative;
+  background: white;
+}
+.menu-main:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  left: 0;
+  bottom: -20px;
+  background: radial-gradient(white 0%, white 70%, rgba(255,255,255,0) 70%, rgba(255,255,255,0) 100%) 0 -10px;
+  background-size: 20px 20px;
+  background-repeat: repeat-x;
+}
+.menu-main li {display: inline-block;}
+.menu-main a {
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 15px;
+  padding: 10px 30px;
+  font-family: 'PT Sans Caption', sans-serif;
+  color: #777777;
+  transition: .3s linear;
+  position: relative;
+}
+.menu-main a:before,
+.menu-main a:after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 3px);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #F58262;
+  opacity: 0;
+  transition: .5s ease-in-out;
+}
+.menu-main a:before {left: 5px;}
+.menu-main a:after {right: 5px;}
+.menu-main a.current:before,
+.menu-main a.current:after,
+.menu-main a:hover:before, 
+.menu-main a:hover:after {opacity: 1;}
+.menu-main a:hover {color: #F58262;}
+@media(max-width:680px) {
+  .menu-main li {display: block;}
+}
+
+/* ===================header_2=========================== */
+
+
+
+/* ===================section_1=========================== */
+
+.promo {
+    min-height: 460px;
+    margin-bottom: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 170, 238, 0.9);
+    border-radius: 20px;
+}
+
+h2{
+    margin-bottom: 30px;
+}
+span{
+    font-size: 30px;
+    background-color: #f7f7f7;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 20px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+#img_1{
+    position: relative;
+    left: 100px;
+    border-radius: 30%;
+    width: 60%;
+
+}
+/* ==== */
+
+
+.clients {
+    min-height: 80px;
+    margin-bottom: 170px;
+}
+
+/* ======================================== */
+.pricing {
+    min-height: 480px;
+    margin-bottom: 235px;
+    
+}
+
+#text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-family: 'Abril Fatface', cursive;
+  color:#777777;
+  background-color: #f7f7f7;
+  border-radius: 30px;
+  margin-bottom: 30px;
+  
+}
+/* Слайдер: */
+.slider{
+  max-width: 90%;
+  position: relative;
+  margin: auto;
+  height: 300px;
+}
+
+.slider .item img {
+  object-fit: cover;
+  width: 100%;
+  height: 400px;
+}
+
+.slider .previous, .slider .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+.slider .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.slider .previous:hover,
+.slider .next:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.slider .item {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {
+      opacity: 0.4
+  }
+  to {
+      opacity: 1
+  }
+}
+
+/* ================= */
+.team_first{
+  min-height: 360px;
+  margin-bottom: 180px;
+
+}
+
+.teams img {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 20%;
+}
+
+.teams h4{
+  font-family: 'Abril Fatface', cursive;
+
+}
+
+/* =============================== */
+
+.team_second{
+  min-height: 360px;
+  margin-bottom: 180px;
+
+}
+
+
+
+/* =========== */
+
+.footer {
+  min-height: 380px;
+  object-fit: cover;
+}
+
+.footer_container{
+  background-color: #f7f7f7;
+  padding: 15px;
+}

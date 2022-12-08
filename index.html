@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <title>Document</title>
+</head>
+<body  onload="time()">
+
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    
+    <div class="container">
+        <header class="header row">
+            <div class="col-3">
+                <div class="block">
+                    <div class="logo-holder logo-3">
+                        <a href="#"><h3>SJ</h3><p>Fronted Dev</p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-9">
+                <div class="block">
+                    <ul class="menu-main">
+                        <li><a href="">Work</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Contact</a></li>
+                      </ul>
+                </div>
+            </div>
+        </header>
+
+        <section class="promo row">
+            <div class="col-6">
+                <div class="block" >
+                    <div class="content_promo">
+                        <h2>До нового года осталось !!!</h2>
+                        <span id="t"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="block">
+                    <img id="img_1" src="imegs/img_1.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="clients row">
+            <div class="col-2">
+                <div class="block">
+                    <img src="imegs/icon_nasa.svg" alt="">
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="block">
+                    <img src="imegs/icon_github.svg" alt="">
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="block">
+                    <img src="imegs/icon_html.svg" alt="">
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="block">
+                    <img src="imegs/icon_css.svg" alt="">
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="block">
+                    <img src="imegs/icon_js.svg" alt="">
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="block">
+                    <img src="imegs/icon_react.svg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="pricing row">
+            <div class="col-12">
+                <div class="block">
+                    <div id="text">Техналогии</div>
+                    <div class="slider">
+                        <div class="item">
+                            <img src="imegs/slider_1.webp" alt="">
+                        </div>
+                    
+                        <div class="item">
+                            <img src="imegs/slider_2.jpg" alt="">
+                        </div>
+                    
+                        <div class="item">
+                            <img src="imegs/slider_3.jpg" alt="">
+                        </div>
+
+                        <div class="item">
+                            <img src="imegs/slider_4.jpeg" alt="">
+                        </div>
+                        <!-- Кнопки-стрелочки -->
+                        <a class="previous" onclick="previousSlide()">&#10094;</a>
+                        <a class="next" onclick="nextSlide()">&#10095;</a>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="team_first row">
+            <div class="col-4">
+                <div class="block">
+                  <div class="teams">
+                    <img src="imegs/section_2.jpg" alt="">
+                    <h4>Lorem, ipsum dolor</h4>
+                    <button class="btn btn-danger mt-3">Subscribe</button>
+                  </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="block">
+                  <div class="teams">
+                    <img src="imegs/section_2.jpg" alt="">
+                    <h4>Lorem, ipsum dolor</h4>
+                    <button class="btn btn-danger mt-3">Subscribe</button>
+                  </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="block">
+                  <div class="teams">
+                    <img src="imegs/section_2.jpg" alt="">
+                    <h4>Lorem, ipsum dolor</h4>
+                    <button class="btn btn-danger mt-3">Subscribe</button>
+                  </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="team_second row">
+          <div class="col-4">
+              <div class="block">
+                <div class="teams">
+                  <img src="imegs/section_4.jpg" alt="">
+                  <h4>Lorem, ipsum dolor</h4>
+                  <button class="btn btn-danger mt-3">Subscribe</button>
+                </div>
+              </div>
+          </div>
+          <div class="col-4">
+              <div class="block">
+                <div class="teams">
+                  <img src="imegs/section_4.jpg" alt="">
+                  <h4>Lorem, ipsum dolor</h4>
+                  <button class="btn btn-danger mt-3">Subscribe</button>
+                </div>
+              </div>
+          </div>
+          <div class="col-4">
+              <div class="block">
+                <div class="teams">
+                  <img src="imegs/section_4.jpg" alt="">
+                  <h4>Lorem, ipsum dolor</h4>
+                  <button class="btn btn-danger mt-3">Subscribe</button>
+                </div>
+              </div>
+          </div>
+      </section>
+
+        <footer>
+            <div class="footer_container">
+              <div class="row">
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                  <div>
+                    <img src="imegs/icon_nasa.svg" alt="">
+                    <p class="mb-30 footer-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad soluta facilis
+                      eos quia optio iusto odit atque eum tempore, quisquam officiis vero veniam hic,</p>
+                  </div>
+                </div>
+                <div class="col-xl-2 offset-xl-1 col-lg-2 col-md-6">
+                  <div class="">
+                    <h4>Quick Link</h4>
+                    <ul class="list-unstyled">
+                      <li>
+                        <a href="#" class="text-decoration-none">Work</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-decoration-none">About</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-decoration-none">Blog</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-decoration-none">Contact</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6">
+                  <div>
+                    <h4>Service</h4>
+                    <ul class="list-unstyled">
+                      <li>
+                        <a href="#" class="text-decoration-none">Marketing</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-decoration-none">Branding</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-decoration-none">Web Design</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-decoration-none">Graphics Design</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6">
+                  <div>
+                    <h4>Newsletter</h4>
+                    <div>
+                      <label for="Newsletter" class="form-label">Subscribe To Our Newsletter</label>
+                      <input type="text" class="form-control" Placeholder="Enter Your Email">
+                      <button class="btn btn-danger mt-3">Send</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center">
+                <div class="copyright">
+                  <p>Developed and maintained by <a href="#" target="_blank">company</a></p>
+                </div>
+              </div>
+            </div>
+          </footer>
+
+        
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
